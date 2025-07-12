@@ -11,7 +11,7 @@ function ItemForm(props) {
     e.preventDefault();
 
     const newItem = {
-      id: uuid(),
+      id: uuid(), // the `uuid` library can be used to generate a unique id
       name: name,
       category: category,
     };
@@ -22,8 +22,6 @@ function ItemForm(props) {
     setName("");
     setCategory("Produce");
   }
-  
-  
   
   return (
     <form className="NewItem" onSubmit={handleSubmit}>
