@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { v4 as uuid } from 'uuid';
 
-function ItemForm(props) {
+function ItemForm({ onItemFormSubmit }) {
   // Controlled input states
   const [name, setName] = useState("");
   const [category, setCategory] = useState("Produce"); //Defaults to Produce

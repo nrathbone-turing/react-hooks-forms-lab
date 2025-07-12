@@ -20,6 +20,10 @@ function App() {
   function handleItemFormSubmit(newItem) {
     // updates the list immutably (passing a new array to the state setter function instead of mutating the original array)
     setItems([...items, newItem]); 
+
+    // Reset filters so new item is visible
+    setSearchText("");
+    setSelectedCategory("All");
   }
 
   // additional support for typing in the input text box to filter results
