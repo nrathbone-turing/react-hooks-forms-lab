@@ -1,6 +1,6 @@
 import React from "react";
 
-function Filter({ searchText,onCategoryChange }) {
+function Filter({ searchText,onSearchChange,onCategoryChange }) {
   return (
     <div className="Filter">
       <input 
