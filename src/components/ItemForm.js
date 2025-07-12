@@ -8,7 +8,7 @@ function ItemForm({ onItemFormSubmit }) {
   
   // event handler for form submission
   function handleSubmit(e) {
-    e.preventDefault();
+    e.preventDefault(); // prevent default page refresh behavior upon submit
 
     const newItem = {
       id: uuid(), // the `uuid` library can be used to generate a unique id
